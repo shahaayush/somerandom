@@ -1,0 +1,2 @@
+baseurl: /somerandom
+exclude: [README.md]
