@@ -2,11 +2,12 @@
 layout: news
 ---
 
-<p>Planetary news</p>
+<p>Recently Discovered Planets</p>
 <ul>
-  {% for lol in site.categories.news %}
+  {% for lol in site.categories.recently-discovered %}
   <li>
     <a href="{{site.baseurl}}{{lol.url}}">{{lol.title}}</a>
+
     <p>{{lol.meta}}</p>
   </li>
   {% endfor %}

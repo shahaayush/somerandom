@@ -1,16 +1,17 @@
 <html>
-<head><title>Hello world</title>
+<head>
+  <title>Hello world</title>
+  <link href="{{site.baseurl}}/css/common.css" rel="stylesheet">
 </head>
 <body>
   <header>
     <strong>Some Random things</strong>
-    <nav>
-      <ul>
-        <li><a href="{{site.baseurl}}/index.html">Home</a></li>
-        <li><a href="{{site.baseurl}}/abc.html">New</a></li>
-      </ul>
-    </nav>
+    {% include nav.html navclass='nav-top' %}
   </header>
   {{content}}
+  <footer>
+    {% include nav.html navclass='nav-bottom' %}
+    <p>Copyright &copy; My Website 2016</p>
+  </footer>
 </body>
 </html>
