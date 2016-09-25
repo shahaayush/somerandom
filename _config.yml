@@ -1,2 +1,3 @@
 baseurl: /somerandom
-exclude: [README.md]
+exclude: ['README.md']
+permalink: pretty
